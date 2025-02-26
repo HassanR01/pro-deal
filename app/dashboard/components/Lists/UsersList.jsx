@@ -3,10 +3,10 @@ import React from 'react'
 import EditUserRole from '../edits/EditUserRole'
 
 const getUsers = async () => {
-    const apiUrl = process.env.API_URL; // تأكد من استخدام NEXT_PUBLIC حتى يكون متاحًا في الواجهة الأمامية
+    const apiUrl = process.env.API_URL; // تأكد من استخدام  حتى يكون متاحًا في الواجهة الأمامية
 
     if (!apiUrl) {
-        console.error("❌ API_URL is missing! Set API_URL in .env");
+        console.error("❌ API_URL is missing! Set  in .env");
         return null;
     }
 

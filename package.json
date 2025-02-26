@@ -13,21 +13,21 @@
     "framer-motion": "^12.4.7",
     "html-react-parser": "^5.2.2",
     "jodit-react": "^5.2.15",
-    "mongoose": "^8.10.2",
-    "next": "^14.2.24",
+    "mongoose": "^8.11.0",
+    "next": "^14.2.1",
     "next-auth": "^4.24.11",
     "nodemailer": "^6.10.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
 }
