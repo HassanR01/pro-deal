@@ -23,7 +23,7 @@ const getDevelopers = async () => {
 
   } catch (error) {
     console.error(`🚨 Error fetching developers:`, error.message);
-    return null;
+    return [];
   }
 };
 

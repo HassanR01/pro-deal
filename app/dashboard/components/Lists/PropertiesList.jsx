@@ -21,7 +21,7 @@ const getProperties = async () => {
 
     } catch (error) {
         console.error("🚨 Error fetching properties:", error.message);
-        return null;
+        return [];
     }
 };
 

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const getDevelopers = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL; // يجب استخدام NEXT_PUBLIC_API_URL لأنه يظهر في الواجهة الأمامية
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
     if (!apiUrl) {
         console.error("❌ API_URL is missing! Set NEXT_PUBLIC_API_URL in .env.local");
@@ -11,9 +11,7 @@ const getDevelopers = async () => {
     }
 
     try {
-        const res = await fetch(`${apiUrl}/api/developers`, {
-            next: { revalidate: 60 },
-        });
+        const res = await fetch(`${apiUrl}/api/developers`);
 
         if (!res.ok) {
             throw new Error(`❌ Failed to fetch developers: ${res.status} ${res.statusText}`);
@@ -23,7 +21,7 @@ const getDevelopers = async () => {
 
     } catch (error) {
         console.error("🚨 Error fetching developers:", error.message);
-        return null;
+        return [];
     }
 };
 

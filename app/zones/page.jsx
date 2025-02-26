@@ -24,7 +24,7 @@ const getZones = async () => {
 
   } catch (error) {
     console.error("🚨 Error fetching zones:", error.message);
-    return null; // لتجنب كسر التطبيق
+    return []; // لتجنب كسر التطبيق
   }
 };
 

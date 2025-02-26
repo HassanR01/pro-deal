@@ -21,7 +21,7 @@ const getProjects = async () => {
 
     } catch (error) {
         console.error("🚨 Error fetching projects:", error.message);
-        return null;
+        return [];
     }
 };
 

@@ -19,7 +19,7 @@ const getLeads = async () => {
 
     } catch (error) {
         console.error("🚨 Error fetching leads:", error.message);
-        return null;
+        return [];
     }
 };
 

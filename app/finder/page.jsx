@@ -21,7 +21,7 @@ const fetchData = async (endpoint) => {
 
   } catch (error) {
     console.error(`🚨 Error fetching ${endpoint}:`, error.message);
-    return null; // تجنب كسر التطبيق عند الخطأ
+    return []; // تجنب كسر التطبيق عند الخطأ
   }
 };
 

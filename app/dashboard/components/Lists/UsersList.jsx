@@ -21,7 +21,7 @@ const getUsers = async () => {
 
     } catch (error) {
         console.error(`🚨 Error fetching users:`, error.message);
-        return null;
+        return [];
     }
 };
 

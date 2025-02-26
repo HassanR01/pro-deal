@@ -2,17 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 
 const getZones = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL; // تأكد من أنه متاح للوصول من العميل
-
-    if (!apiUrl) {
-        console.error("❌ API_URL is missing! Set NEXT_PUBLIC_API_URL in .env");
-        return null;
-    }
-
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    console.log(apiUrl + "😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂")
+    
     try {
-        const res = await fetch(`${apiUrl}/api/zones`, {
-            next: {revalidate: 60},
-        });
+        const res = await fetch(`${apiUrl}/api/zones`);
 
         if (!res.ok) {
             throw new Error(`❌ Failed to fetch zones: ${res.status} ${res.statusText}`);
@@ -22,7 +16,7 @@ const getZones = async () => {
 
     } catch (error) {
         console.error(`🚨 Error fetching zones:`, error.message);
-        return null;
+        return [];
     }
 };
 
