@@ -2,7 +2,7 @@ import React from 'react'
 import EditProjects from '../../components/edits/EditProjects'
 
 const getProject = async (id) => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/projects/${id}`)
 
@@ -18,7 +18,7 @@ const getProject = async (id) => {
 }
 
 const getZones = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/zones`)
 
@@ -34,7 +34,7 @@ const getZones = async () => {
 }
 
 const getDevelopers = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/developers`)
 

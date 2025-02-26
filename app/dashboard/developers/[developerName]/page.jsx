@@ -2,7 +2,7 @@ import React from 'react'
 import EditDeveloper from '../../components/edits/EditDeveloper'
 
 const getDeveloper = async (id) => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/developers/${id}`)
 

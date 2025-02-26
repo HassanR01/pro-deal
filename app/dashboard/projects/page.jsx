@@ -3,7 +3,7 @@ import AddProject from '../components/adding/AddProject'
 import ProjectsList from '../components/Lists/ProjectsList'
 
 const getZones = async () => {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL
+  const apiUrl = process.env.API_URL
   try {
     const res = await fetch(`${apiUrl}/api/zones`)
 
@@ -19,7 +19,7 @@ const getZones = async () => {
 }
 
 const getDevelopers = async () => {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL
+  const apiUrl = process.env.API_URL
   try {
     const res = await fetch(`${apiUrl}/api/developers`)
 

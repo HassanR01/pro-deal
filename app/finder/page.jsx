@@ -4,9 +4,9 @@ import FinderPage from '../components/finder/FinderPage'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 const fetchData = async (endpoint) => {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL; // تأكد من أن API_URL متاحة في البيئة
+  const apiUrl = process.env.API_URL; // تأكد من أن API_URL متاحة في البيئة
   if (!apiUrl) {
-    console.error("❌ API_URL is missing! Set NEXT_PUBLIC_API_URL in .env");
+    console.error("❌ API_URL is missing! Set API_URL in .env");
     return null;
   }
 

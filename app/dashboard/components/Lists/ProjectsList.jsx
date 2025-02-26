@@ -3,10 +3,10 @@ import Link from 'next/link'
 import React from 'react'
 
 const getProjects = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL; // يجب أن يكون متاحًا في الواجهة الأمامية
+    const apiUrl = process.env.API_URL; // يجب أن يكون متاحًا في الواجهة الأمامية
 
     if (!apiUrl) {
-        console.error("❌ API_URL is missing! Set NEXT_PUBLIC_API_URL in .env");
+        console.error("❌ API_URL is missing! Set API_URL in .env");
         return null;
     }
 

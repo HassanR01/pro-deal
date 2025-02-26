@@ -3,7 +3,7 @@ import EditProperty from '../../components/edits/EditProperty'
 
 
 const getProperty = async (id) => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     console.log(apiUrl)
     try {
         const res = await fetch(`${apiUrl}/api/properties/${id}`)
@@ -20,7 +20,7 @@ const getProperty = async (id) => {
 }
 
 const getZones = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/zones`)
 
@@ -36,7 +36,7 @@ const getZones = async () => {
 }
 
 const getDevelopers = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/developers`)
 

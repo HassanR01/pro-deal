@@ -5,10 +5,10 @@ import Image from 'next/image'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 const getZones = async () => {
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL; // استخدم NEXT_PUBLIC ليكون متاحًا على المتصفح
+  const apiUrl = process.env.API_URL; // استخدم NEXT_PUBLIC ليكون متاحًا على المتصفح
 
   if (!apiUrl) {
-    console.error("❌ API_URL is missing! Set NEXT_PUBLIC_API_URL in .env");
+    console.error("❌ API_URL is missing! Set API_URL in .env");
     return null;
   }
 

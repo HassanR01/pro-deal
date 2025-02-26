@@ -1,10 +1,10 @@
 import React from 'react'
 
 const getLeads = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL; // استخدم NEXT_PUBLIC_API_URL لأنه يتم تشغيله على الواجهة الأمامية
+    const apiUrl = process.env.API_URL; // استخدم API_URL لأنه يتم تشغيله على الواجهة الأمامية
 
     if (!apiUrl) {
-        console.error("❌ API_URL is missing! Set NEXT_PUBLIC_API_URL in .env.local");
+        console.error("❌ API_URL is missing! Set API_URL in .env.local");
         return null;
     }
 

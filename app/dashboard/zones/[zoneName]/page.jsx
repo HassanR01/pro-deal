@@ -2,7 +2,7 @@ import React from 'react'
 import EditZones from '../../components/edits/EditZones'
 
 const getZone = async (name) => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL
+    const apiUrl = process.env.API_URL
     try {
         const res = await fetch(`${apiUrl}/api/zones/${name}`)
         if (res.ok) {

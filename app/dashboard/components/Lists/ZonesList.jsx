@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const getZones = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiUrl = process.env.API_URL;
     console.log(apiUrl + "😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂")
     
     try {
