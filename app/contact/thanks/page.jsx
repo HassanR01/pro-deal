@@ -1,8 +1,8 @@
-import TitlePage from '@/app/components/main/title'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import TitlePage from '../../components/main/title';
 
 export const metadata = {
     title: "Thank You - Pro Deal | شكراً لك - برو ديل",
