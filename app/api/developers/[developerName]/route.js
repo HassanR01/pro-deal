@@ -1,6 +1,6 @@
-import connectMongoDB from "@/libs/mongoose"
-import Developer from "@/models/developers"
 import { NextResponse } from "next/server"
+import connectMongoDB from "../../../../libs/mongoose"
+import Developer from "../../../../models/developers"
 
 export async function GET(req , {params}){
     const { developerName } = params

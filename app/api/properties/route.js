@@ -1,6 +1,6 @@
-import connectMongoDB from "@/libs/mongoose"
-import Property from "@/models/properties"
 import { NextResponse } from "next/server"
+import connectMongoDB from "../../../libs/mongoose"
+import Property from "../../../models/properties"
 
 export async function POST(req) {
     const { title, category, image, description, location, position, bathrooms, bedrooms, area, startBudget, zone, developer } = await req.json()

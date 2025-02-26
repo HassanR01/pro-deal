@@ -1,6 +1,6 @@
-import connectMongoDB from "@/libs/mongoose"
-import User from "@/models/users"
 import { NextResponse } from "next/server"
+import User from "../../../../models/users"
+import connectMongoDB from "../../../../libs/mongoose"
 
 export async function PUT(req , {params}){
     const { userEmail } = params

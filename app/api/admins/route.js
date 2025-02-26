@@ -1,6 +1,7 @@
-import connectMongoDB from "@/libs/mongoose"
-import Admin from "@/models/admins"
+
 import { NextResponse } from "next/server"
+import connectMongoDB from "../../../libs/mongoose"
+import Admin from "../../../models/admins"
 
 export async function POST(req){
     const { name, email, password } = await req.json()

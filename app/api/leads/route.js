@@ -1,6 +1,7 @@
-import connectMongoDB from "@/libs/mongoose";
-import Lead from "@/models/leads";
+
 import { NextResponse } from "next/server";
+import Lead from "../../../models/leads";
+import connectMongoDB from "../../../libs/mongoose";
 
 
 export async function POST(req){

@@ -1,6 +1,6 @@
-import connectMongoDB from "@/libs/mongoose"
-import Project from "@/models/projects"
 import { NextResponse } from "next/server"
+import connectMongoDB from "../../../../libs/mongoose"
+import Project from "../../../../models/projects"
 
 export async function PUT(req, { params }) {
     const { projectName } = params

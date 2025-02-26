@@ -1,6 +1,7 @@
-import connectMongoDB from "@/libs/mongoose"
-import Property from "@/models/properties"
+
 import { NextResponse } from "next/server"
+import connectMongoDB from "../../../../libs/mongoose"
+import Property from "../../../../models/properties"
 
 export async function PUT(req , {params}){
     const { propertyName } = params

@@ -1,11 +1,11 @@
-import connectMongoDB from "@/libs/mongoose"
-import Admin from "@/models/admins"
+import Admin from "../../../../models/admins"
+import connectMongoDB from "../../../../libs/mongoose"
 import { NextResponse } from "next/server"
 
 export async function GET(req, { params }) {
     const { userEmail } = params
     await connectMongoDB()
-    const admin = Admin.findOne({ email: userEmail })
+    const admin = Admin.findOne({email: userEmail})
     return NextResponse.json({admin})
 }
 
