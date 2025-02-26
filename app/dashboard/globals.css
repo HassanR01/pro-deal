@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  display: none !important;
+}
+
+footer {
+  display: none !important;
+}
+
+.dashboard {
+  @apply relative w-full h-screen flex items-center justify-center;
+}
+
+.menuDB {
+  box-shadow: 0 0 20px 1px black;
+  @apply flex items-center justify-between flex-col absolute -right-72 top-0 h-full w-72 py-5 bg-mainColor text-bgColor hover:right-0 duration-700 z-10;
+}
+
+.line {
+  @apply w-full h-3 rounded-xl shadow-lg;
+}
+
+.card {
+  @apply m-5 shadow-md rounded-xl w-60 h-32 hover:shadow-2xl hover:bg-slate-300 duration-300;
+}
+
+.remove {
+  font-size: large;
+  font-weight: 800;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #fe2222;
+  text-align: center;
+  color: #f6f8fa;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+}
+
+.menuDB::after {
+  content: ">";
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  background-color: #e28c1a;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 10px;
+  font-size: x-large;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  z-index: -1;
+}
+
+.menuDB nav ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 700;
+  font-size: large;
+  border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+}
+.menuDB nav ul li:hover {
+  background-color: #f6f8fa;
+  color: #243148;
+}
+
+.menuDB nav ul li a {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuDB nav ul li a svg {
+  margin-left: 5px;
+}
+
+/* Sections */
+.dashboard section {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.dashboard section > h1 {
+  position: relative;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 800;
+  padding: 10px 20px;
+  border-bottom: 5px solid #243148;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dashboard form {
+  margin: 50px 0;
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard form input,
+.dashboard form select,
+.dashboard form textarea {
+  width: 350px;
+  margin: 10px;
+  font-size: large;
+  padding: 2px 5px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #2286fe;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dashboard form input:focus,
+.dashboard form selec:focus,
+.dashboard form textarea:focus {
+  border-bottom: 3px solid #22fe34;
+}
+
+.dashboard form .btns button {
+  font-size: large;
+  font-weight: 800;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #2286fe;
+  color: #f6f8fa;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.dashboard table {
+  width: 100%;
+}
+
+.dashboard table th,
+td {
+  padding: 3px 10px;
+  text-align: start;
+}
+
+.dashboard table td form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.dashboard table td form select {
+  width: 100px;
+  border: none;
+}
+.dashboard table td form .btn {
+  padding: 0;
+  width: 100px;
+}
