@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from 'next/link'
 import GetDataForConsultingForm from "./components/consultationForm/GetDataForConsultingForm";
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { useEffect, useState } from "react";
 import Loading from "./components/home/loading";
 import { motion } from "framer-motion";
 import { useDataContext } from "./components/context/DataContext";
