@@ -36,7 +36,7 @@ export default async function ZonesList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {zones.map(zone => (
+                        {zones?.map(zone => (
                             <tr key={zone._id}>
                                 <td>{zone.name}</td>
                                 <td>{zone.location}</td>

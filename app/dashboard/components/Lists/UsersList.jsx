@@ -40,7 +40,7 @@ export default async function UsersList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {users.map(user => (
+                        {users?.map(user => (
                             <tr key={user._id}>
                                 <td className='flex items-center justify-start'>
                                     <Image className='ml-2 rounded-lg' src={user.image} width={50} height={50} alt={user.title} />

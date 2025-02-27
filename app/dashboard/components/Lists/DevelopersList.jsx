@@ -42,7 +42,7 @@ export default async function DevelopersList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {developers.map(dev => (
+                        {developers?.map(dev => (
                             <tr key={dev._id}>
                                 <td className='flex items-center justify-start'>
                                     <Image className='ml-2 rounded-lg p-2' src={dev.image} width={80} height={80} alt={dev.name} />

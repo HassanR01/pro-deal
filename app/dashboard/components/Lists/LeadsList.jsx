@@ -43,7 +43,7 @@ export default async function LeadsList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {leads.map(lead => (
+                        {leads?.map(lead => (
                             <tr key={lead._id}>
                                 <td className='max-w-20 text-sm'>{lead.name}</td>
                                 <td className='max-w-20 text-sm'>{lead.phone}</td>

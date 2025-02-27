@@ -42,7 +42,7 @@ export default async function PropertiesList() {
                       </tr>
                   </thead>
                   <tbody>
-                      {properties.map(property => (
+                      {properties?.map(property => (
                           <tr key={property._id}>
                               <td className='flex items-start justify-start'>
                                   <Image className='ml-2 rounded-lg' src={property.image} width={80} height={80} alt={property.title} />

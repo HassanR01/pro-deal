@@ -43,7 +43,7 @@ export default async function ProjectsList() {
                         </tr>
                     </thead>
                     <tbody>
-                        {projects.map(project => (
+                        {projects?.map(project => (
                             <tr key={project._id}>
                                 <td className='flex items-start justify-start'>
                                     <Image className='ml-2 rounded-lg' src={project.image} width={80} height={80} alt={project.title} />

@@ -44,7 +44,7 @@ export default async function page() {
         </div>
 
         <div className="developers flex flex-wrap items-center justify-center w-full">
-          {developers.map(developer => (
+          {developers?.map(developer => (
             <Link key={developer._id} className='min-w-80 flex flex-col items-center justify-between m-3 p-2' href={`/developers/${developer.name}`}>
               <div className="image h-40 rounded-full overflow-hidden shadow-xl border-2">
                 <Image src={developer.image} className='w-full h-full' width={100} height={100} alt='city Icon' />
