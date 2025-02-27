@@ -11,6 +11,7 @@ import { motion, useScroll } from 'framer-motion'
 export default function Header() {
     const { admins } = useDataContext()
     const { status, data: session } = useSession()
+    const [openMenu, setOpenMenu] = useState(false)
 
 
     const { scrollY } = useScroll()
@@ -26,7 +27,6 @@ export default function Header() {
         return <Loading />
     } else {
 
-        console.log(admins)
         const adminEmails = []
         admins.forEach(admin => {
             adminEmails.push(admin.email)
@@ -45,13 +45,13 @@ export default function Header() {
                 </Link>
 
                 <nav>
-                    <ul className='sm:flex items-center justify-between duration-700'>
-                        <li className='font-bold text-base py-1 px-2'><Link href={'/'}>الرئيسية</Link></li>
-                        <li className='font-bold text-base py-1 px-2'><Link href={'/zones'}>المناطق</Link></li>
-                        <li className='font-bold text-base py-1 px-2'><Link href={'/zones/مصر/projects'}>المشروعات</Link></li>
-                        <li className='font-bold text-base py-1 px-2'><Link href={'/zones/مصر/properties'}>الوحدات</Link></li>
-                        <li className='font-bold text-base py-1 px-2'><Link href={'/developers'}>المطورين</Link></li>
-                        <li className='font-bold text-base py-1 px-2'><Link href={'/contact'}>التواصل</Link></li>
+                    <ul className={`sm:flex ${openMenu ? "h-[350px] py-2" : "h-0"} items-center justify-between duration-700`}>
+                        <li onClick={() => setOpenMenu(false)} className='font-bold text-base py-1 px-2'><Link href={'/'}>الرئيسية</Link></li>
+                        <li onClick={() => setOpenMenu(false)} className='font-bold text-base py-1 px-2'><Link href={'/zones'}>المناطق</Link></li>
+                        <li onClick={() => setOpenMenu(false)} className='font-bold text-base py-1 px-2'><Link href={'/zones/مصر/projects'}>المشروعات</Link></li>
+                        <li onClick={() => setOpenMenu(false)} className='font-bold text-base py-1 px-2'><Link href={'/zones/مصر/properties'}>الوحدات</Link></li>
+                        <li onClick={() => setOpenMenu(false)} className='font-bold text-base py-1 px-2'><Link href={'/developers'}>المطورين</Link></li>
+                        <li onClick={() => setOpenMenu(false)} className='font-bold text-base py-1 px-2'><Link href={'/contact'}>التواصل</Link></li>
                     </ul>
                 </nav>
 
@@ -86,10 +86,10 @@ export default function Header() {
                             <div className="vLine flex sm:hidden rounded-xl h-8 w-1 mx-4 bg-textColor"></div>
                         </>
                     )}
-                    <div className="brgIcon w-8 flex sm:hidden flex-col items-center justify-center">
-                        <span className=' w-4 h-1 bg-black rounded-xl my-0.5 duration-700'></span>
-                        <span className=' w-full h-1 bg-black rounded-xl my-0.5 duration-700'></span>
-                        <span className=' w-4 h-1 bg-black rounded-xl my-0.5 duration-700'></span>
+                    <div onClick={() => setOpenMenu(!openMenu)} className="brgIcon w-8 flex sm:hidden flex-col items-center justify-center">
+                        <span className={` ${openMenu ? "w-8" : "w-4"} h-1 bg-black rounded-xl my-0.5 duration-700`}></span>
+                        <span className={` ${openMenu ? "w-8" : "w-8"} h-1 bg-black rounded-xl my-0.5 duration-700`}></span>
+                        <span className={` ${openMenu ? "w-8" : "w-4"} h-1 bg-black rounded-xl my-0.5 duration-700`}></span>
                     </div>
                 </div>
             </motion.header>

@@ -63,7 +63,7 @@ export default async function page() {
         </div>
 
       </section>
-            <GoogleAnalytics gaId="G-3EVKQWKC3S" />
+      <GoogleAnalytics gaId="G-3EVKQWKC3S" />
     </>
   )
 }

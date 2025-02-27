@@ -27,10 +27,6 @@ header.active {
   @apply bg-bgColor w-full rounded-none shadow-xl;
 }
 
-.brgIcon:hover span {
-  width: 100%
-}
-
 .btn {
   @apply p-1 w-28 bg-mainColor text-bgColor rounded-lg m-4;
 }
