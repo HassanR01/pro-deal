@@ -18,10 +18,10 @@ export default function Footer() {
                         <p>يمكن أن تكون قيمة العقارات...</p>
                     </div>
                     <div className="links flex items-center justify-around my-8">
-                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"https://www.facebook.com/aqarystore"} target='_blank'><Image src={'/facebookIcon.png'} width={30} height={30} alt='Facebook Icon' /></Link>
-                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"#"} target='_blank'><Image src={'/instagram.png'} width={30} height={30} alt='instagram Icon' /></Link>
-                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"#"} target='_blank'><Image src={'/linkedin.png'} width={30} height={30} alt='linkedin Icon' /></Link>
-                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"#"} target='_blank'><Image src={'/whatsapp.png'} width={30} height={30} alt='whatsapp Icon' /></Link>
+                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"https://www.facebook.com/sa7elelielife"} target='_blank'><Image src={'/facebookIcon.png'} width={30} height={30} alt='Facebook Icon' /></Link>
+                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"https://www.instagram.com/prodeal_eg"} target='_blank'><Image src={'/instagram.png'} width={30} height={30} alt='instagram Icon' /></Link>
+                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"https://www.linkedin.com/in/pro-deal-74751a353"} target='_blank'><Image src={'/linkedin.png'} width={30} height={30} alt='linkedin Icon' /></Link>
+                        <Link className='ml-6 hover:shadow-xl hover:scale-110 duration-700' href={"https://wa.me/+201005511089"} target='_blank'><Image src={'/whatsapp.png'} width={30} height={30} alt='whatsapp Icon' /></Link>
                     </div>
                 </div>
             </div>
