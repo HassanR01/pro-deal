@@ -1,11 +1,12 @@
-import ListData from '@/app/components/filter/ListData'
-import AddLead from '@/app/components/lead/AddLead'
-import TitlePage from '@/app/components/main/title'
+
 import HTMLReactParser from 'html-react-parser'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import TitlePage from '../../../../components/main/title'
+import AddLead from '../../../../components/lead/AddLead'
+import ListData from '../../../../components/filter/ListData'
 
 const getProject = async (id) => {
   const apiUrl = process.env.API_URL

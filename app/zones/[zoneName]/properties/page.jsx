@@ -1,7 +1,8 @@
-import ListData from '@/app/components/filter/ListData'
-import TitlePage from '@/app/components/main/title'
+
 import React from 'react'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import TitlePage from '../../../components/main/title';
+import ListData from '../../../components/filter/ListData';
 
 export const metadata = {
   title: "Real Estate Units in Egypt - Aqary Store | وحدات عقارية في مصر - متجر عقاري",

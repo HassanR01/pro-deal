@@ -1,8 +1,8 @@
 import React from 'react'
-import TitlePage from '../components/main/title'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import TitlePage from '../components/main/title';
 
 const getZones = async () => {
   const apiUrl = process.env.API_URL; // استخدم NEXT_PUBLIC ليكون متاحًا على المتصفح
