@@ -3,9 +3,7 @@ import React from 'react'
 const getLeads = async () => { 
     const apiUrl = process.env.API_URL
     try {
-        const res = await fetch(`${apiUrl}/api/leads`, {
-            cache: 'no-store'
-        })
+        const res = await fetch(`${apiUrl}/api/leads`)
 
         if (!res.ok) {
             throw new Error('Caonnot Catch the Leads Data')
