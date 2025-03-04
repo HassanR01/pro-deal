@@ -46,8 +46,8 @@ export async function generateMetadata({ params }) {
 
 
   return {
-    title: `${title} - متجر عقاري`,
-    description: `${category} - تقع في ${location} ، عدد الغرف: ${bedrooms} ، المساحة: ${area} ، الحمامات: ${bathrooms} ، السعر يبدأ من: ${insertDots(startBudget)} ، المطور: ${developer} - متجر عقاري ، عقارك هتلاقية في عقاري`,
+    title: `${title} - برو ديل`,
+    description: `${category} - تقع في ${location} ، عدد الغرف: ${bedrooms} ، المساحة: ${area} ، الحمامات: ${bathrooms} ، السعر يبدأ من: ${insertDots(startBudget)} ، المطور: ${developer} - برو ديل ، استثمر في الاناقة و عٍش في الرفاهية`,
     siteName: 'Aqay Store',
     images: [
       {

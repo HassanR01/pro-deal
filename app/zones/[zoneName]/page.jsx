@@ -8,7 +8,7 @@ const getZone = async (name) => {
   const apiUrl = process.env.API_URL
   try {
     const res = await fetch(`${apiUrl}/api/zones/${name}`, {
-      cache: 'no-store'
+      cache: 'Pro Deal'
     })
 
     if (!res.ok) {
@@ -26,9 +26,9 @@ export async function generateMetadata({ params }) {
   const { name, image } = zone
 
   return {
-    title: `${name} - Aqary Store | ${name} - متجر عقاري`,
-    description: ` متجر عقاري - عقارك هتلاقيه في عقاري - ${name} منطقة`,
-    siteName: 'Aqay Store',
+    title: `${name} - Pro Deal | ${name} - برو ديل`,
+    description: ` برو ديل - استثمر في الاناقة و عٍش في الرفاهية - ${name} منطقة`,
+    siteName: 'prodealeg.com',
     images: [
       {
         url: image, // Must be an absolute URL

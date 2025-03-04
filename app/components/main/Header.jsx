@@ -38,10 +38,10 @@ export default function Header() {
             >
                 <Link href={'/'} className="logo px-2 py-1 flex items-center justify-center">
                     <div className="text flex flex-col items-end justify-center ml-2">
-                        <h3 className='lg:text-4xl text-xl text-textColor font-black'>Pro Deal</h3>
-                        <span className='font-bold text-[5.5px] lg:text-[9.5px] -mt-1'>Invest in Elegance, Live in Luxury</span>
+                        <h3 className='lg:text-4xl text-xl text-textColor font-bold'>Pro Deal</h3>
+                        <span className='font-bold text-[5.5px] lg:text-[9.2px] -mt-1.5'>Invest in Elegance, Live in Luxury</span>
                     </div>
-                    <Image src={'/logo.svg'} width={40} height={40} alt='Aqary Store Logo' />
+                    <Image className='w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]' src={'/logo.svg'} width={50} height={50} alt='Aqary Store Logo' />
                 </Link>
 
                 <nav>

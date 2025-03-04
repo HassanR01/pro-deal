@@ -44,9 +44,9 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${title} - متجر عقاري`,
-    description: `يقع في ${location} ، السعر يبدأ من: ${insertDots(startBudget)} ، المطور: ${developer} - متجر عقاري ، عقارك هتلاقية في عقاري`,
-    siteName: 'Aqay Store',
+    title: `${title} - برو ديل`,
+    description: `يقع في ${location} ، السعر يبدأ من: ${insertDots(startBudget)} ، المطور: ${developer} - برو ديل ، استثمر في الاناقة و عٍش في الرفاهية`,
+    siteName: 'prodealeg.com',
     images: [
       {
         url: image, // Must be an absolute URL

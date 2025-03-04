@@ -26,9 +26,9 @@ export async function generateMetadata({ params }) {
   const { name, description, image } = developer
 
   return {
-    title: `${name} - Aqary Store | ${name} - متجر عقاري`,
-    description: `${description} - عقارك هتلاقيه في عقاري - متجر عقاري`,
-    siteName: 'Aqay Store',
+    title: `${name} - Pro Deal | ${name} - برو ديل`,
+    description: `${description} - عقارك هتلاقيه في عقاري - برو ديل`,
+    siteName: 'prodealeg.com',
     images: [
       {
         url: image, // Must be an absolute URL

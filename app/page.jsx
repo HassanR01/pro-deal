@@ -50,7 +50,7 @@ export default function Home() {
             <SetupMap locations={zones} units={properties} developers={developers} />
           </div>
           <div className="text text-center mt-56 lg:mt-0 p-2">
-            <h1 className=" text-3xl lg:text-5xl items-center text-center font-black mb-8">استثمر في  <span className="text-mainColor">الأناقة</span>، وعِشها <span className="text-mainColor">برفاهية</span></h1>
+            <h1 className=" text-3xl lg:text-5xl items-center text-center font-black mb-8">استثمر في  <span className="text-mainColor">الأناقة</span>، وعِش في <span className="text-mainColor">الرفاهية</span></h1>
             <p className="text-sm lg:text-lg font-medium">إيجاد عقارك اصبح ابسط من خلال نظام بحث برو ديل</p>
             <p className="text-sm lg:text-lg font-medium">استكشف قوائم العقارات الواسعة حسب الفئة</p>
             <Image className="bottom-0 left-0 absolute" src={'/locationHome.svg'} width={150} height={150} alt="ابحث عن العقار في متجر عقاري" />
